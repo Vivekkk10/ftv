@@ -13,3 +13,23 @@
 .shane_tm_section p {
     color: white !important;
 }
+
+.shane_tm_modalbox .news_popup_informations .image img {
+    opacity: 100 !important;
+}
+
+.header-con {
+    border-radius: 31px;
+    padding: 15px 35px;
+    background-color: rgb(255, 215, 0);
+}
+
+.my_trigger .hamburger .hamburger-inner::before, .my_trigger .hamburger .hamburger-inner::after, .my_trigger .hamburger .hamburger-inner {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .shane_tm_about ,  .shane_tm_testimonials {
+        padding: 40px 0px;    }
+  }

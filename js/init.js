@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2021 Marketify
- * Author: Marketify
- * This file is made for CURRENT TEMPLATE
-*/
+
 
 
 jQuery(document).ready(function(){
@@ -145,16 +141,6 @@ function shane_tm_cursor_switcher(){
 
 jQuery(".player").YTPlayer();
 
-// -----------------------------------------------------
-// --------------------   MODALBOX    ------------------
-// -----------------------------------------------------
-
-function shane_tm_modalbox(){
-	"use strict";
-	
-	jQuery('.shane_tm_all_wrap').prepend('<div class="shane_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>')
-}
-
 
 // -------------------------------------------------
 // -----------------    PORTFOLIO    ---------------
@@ -241,66 +227,6 @@ function shane_tm_portfolio_popup(){
 		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><h3>'+title+'</h3><span><a href="#">'+category+'</a></span><div>');
 		shane_tm_data_images();
-		return false;
-	});
-	closePopup.on('click',function(){
-		modalBox.removeClass('opened');
-		modalBox.find('.description_wrap').html('');
-		return false;
-	});
-}
-
-// -------------------------------------------------
-// -------------  MODALBOX NEWS  -------------------
-// -------------------------------------------------
-
-function shane_tm_modalbox_news(){
-	
-	"use strict";
-	
-	var modalBox		= jQuery('.shane_tm_modalbox');
-	var button			= jQuery('.shane_tm_news .shane_tm_full_link,.shane_tm_news .news_list ul li .details .title a');
-	var closePopup		= modalBox.find('.close');
-	
-	button.on('click',function(){
-		var element 	= jQuery(this);
-		var parent 		= element.closest('.list_inner');
-		var content 	= parent.find('.news_hidden_details').html();
-		var image		= element.closest('.list_inner').find('.image .main').data('img-url');
-		var title	 	= parent.find('.details .title a').text();
-		modalBox.addClass('opened');
-		modalBox.find('.description_wrap').html(content);
-		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
-		modalBox.find('.news_popup_informations .image').after('<div class="details"><h3>'+title+'</h3><div>');
-		shane_tm_data_images();
-		return false;
-	});
-	closePopup.on('click',function(){
-		modalBox.removeClass('opened');
-		modalBox.find('.description_wrap').html('');
-		return false;
-	});
-	
-}
-
-// -------------------------------------------------
-// -------------  MODALBOX CONTACT  ----------------
-// -------------------------------------------------
-
-function shane_tm_modalbox_contact(){
-	
-	"use strict";
-	
-	var button			= jQuery('.shane_tm_talk .button a,.shane_tm_topbar .menu ul li a.modal');
-	var modalBox		= jQuery('.shane_tm_modalbox');
-	var closePopup		= modalBox.find('.close');
-	
-	button.on('click',function(){
-		var content		= jQuery('.shane_tm_contact_popup').html();
-		modalBox.addClass('opened');
-		modalBox.find('.description_wrap').html(content);
-		shane_tm_contact_form();
-		initMap();
 		return false;
 	});
 	closePopup.on('click',function(){

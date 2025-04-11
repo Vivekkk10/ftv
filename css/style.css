@@ -1,31 +1,5 @@
 @charset "utf-8";
-/*
-/*	Copyright (c) 2021 Marketify
-/*	Author: Marketify
-/*	This file is made for CURRENT TEMPLATE
 
-
-01) SHANE BASE
-02) SHANE MOBILE MENU
-03) SHANE TOPBAR
-04) SHANE HERO
-05) SHANE ABOUT
-06) SHANE PORTFOLIO
-07) SHANE SKILLS
-08) SHANE VIDEO
-09) SHANE PARTNERS
-10) SHANE TESTIMONIALS
-11) SHANE NEWS
-12) SHANE TALK
-13) SHANE COPYRIGHT
-14) SHANE MODALBOX CONTACT
-15) SHANE CURSOR
-16) SHANE MEDIA QUERIES (FOR SMALL DEVIVES)
-
-
-/*---------------------------------------------------*/
-/*	01) SHANE BASE
-/*---------------------------------------------------*/
 
 html {
 	overflow-x: hidden;
@@ -51,25 +25,9 @@ img.svg{
 	width: 15px;
 	height: 15px;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #6f6f6f;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #6f6f6f;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #6f6f6f;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #6f6f6f;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: #6f6f6f;
-}
 
-::placeholder { /* Most modern browsers support this now. */
+
+::placeholder {
    color: #6f6f6f;
 }
 
@@ -108,8 +66,6 @@ h6 { font-size: 16px; }
 .shane_tm_all_wrap,
 .shane_tm_all_wrap *{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
-			box-sizing: border-box; /* Opera/IE 8+ */
 }
 .shane_tm_section{
 	width: 100%;
@@ -237,7 +193,7 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	02) SHANE MOBILE MENU
+/* MOBILE MENU
 /*---------------------------------------------------*/
 
 .shane_tm_mobile_menu{
@@ -396,7 +352,7 @@ h6 { font-size: 16px; }
 .shane_tm_mobile_menu .logo img{max-width: 70px;}
 
 /*---------------------------------------------------*/
-/*	03) SHANE TOPBAR
+/* TOPBAR
 /*---------------------------------------------------*/
 
 .shane_tm_topbar{
@@ -432,7 +388,7 @@ h6 { font-size: 16px; }
 }
 .shane_tm_topbar .topbar_inner .logo a{display: inline-block;}
 .shane_tm_topbar .topbar_inner .logo img{
-	max-width: 90px;
+	max-width: 110px;
 }
 .shane_tm_topbar .menu ul{
 	margin: 0px;
@@ -464,7 +420,7 @@ h6 { font-size: 16px; }
 
 
 /*---------------------------------------------------*/
-/*	04) SHANE HERO
+/*HERO
 /*---------------------------------------------------*/
 
 .shane_tm_hero{
@@ -733,7 +689,7 @@ body.loaded .overlay_effect:after{
 }
 
 /*---------------------------------------------------*/
-/*	05) SHANE ABOUT
+/* ABOUT
 /*---------------------------------------------------*/
 
 .shane_tm_about{
@@ -749,6 +705,7 @@ body.loaded .overlay_effect:after{
 	clear: both;
 	display: flex;
 	align-items: center;
+	padding-top: 70px;
 }
 .shane_tm_about .left{
 	width: 50%;
@@ -758,6 +715,7 @@ body.loaded .overlay_effect:after{
 .shane_tm_about .left .image img{
 	min-width: 100%;
 	opacity: 0;
+	height: 500px;
 }
 .shane_tm_about .left .main{
 	position: absolute;
@@ -799,6 +757,7 @@ body.loaded .overlay_effect:after{
 .shane_tm_title h3{
 	font-weight: 800;
 	font-family: "Poppins";
+	color: rgb(255, 215, 0) !important;
 } 
 .shane_tm_title span{
 	display: inline-block;
@@ -847,7 +806,7 @@ body.loaded .overlay_effect:after{
 }
 
 /*---------------------------------------------------*/
-/*	06) SHANE PORTFOLIO
+/* PORTFOLIO
 /*---------------------------------------------------*/
 
 .shane_tm_title .title_flex{
@@ -1213,241 +1172,8 @@ body.loaded .overlay_effect:after{
 	background-position: center;
 }
 
-
-
-
-
 /*---------------------------------------------------*/
-/*	07) SHANE SKILLS
-/*---------------------------------------------------*/
-
-.shane_tm_skills{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 140px;
-}
-.shane_tm_skills .skills_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: flex;
-}
-.shane_tm_skills .left{
-	width: 50%;
-	padding-right: 50px;
-}
-.shane_tm_skills .text{
-	padding-top: 27px;
-	float: left;
-}
-.tokyo_progress{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.progress_inner{
-	width:100%;
-	margin-bottom:34px;
-}
-.progress_inner:last-child{margin-bottom: 0px;}
-.progress_inner > span{
-	margin:0px 0px 7px 0px;
-	width:100%;
-	display:block;
-	text-align:left;
-	font-family: "Poppins";
-	font-weight: 500;
-	color: #333;
-}
-.progress_inner span.number{float: right;}
-.progress_inner .background{
-	background:rgba(0,0,0,.05);
-	width:100%;
-	min-width:100%;
-	position:relative;
-	height:4px;
-}
-.progress_inner .background .bar_in{
-	height:100%;
-	background:#000;
-	width:0px;
-	overflow:hidden;
-}
-.progress_inner .background .bar{
-	width:0px;
-	height:100%;
-}
-.progress_inner .background .bar.open{
-	-webkit-animation: wow 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
-	-moz-animation:    wow 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
-	animation:         wow 1.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
-	width:100%;	
-}
-
-@-webkit-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-@-moz-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-@keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-
-.shane_tm_skills .right{
-	width: 50%;
-	padding-left: 50px;
-}
-
-/*---------------------------------------------------*/
-/*	08) SHANE VIDEO
-/*---------------------------------------------------*/
-
-.shane_tm_business_video{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.shane_tm_business_video{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-}
-.shane_tm_business_video .bg{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-}
-.shane_tm_business_video .bg .image{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position:center; 
-}
-.shane_tm_business_video .bg .overlay{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-color: rgba(0,0,0,.6);
-	z-index: 1;
-}
-.shane_tm_business_video .content{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	margin: 0px auto;
-	z-index: 2;
-	text-align: center;
-	padding: 150px 0px;
-}
-.shane_tm_business_video .rounded{
-	width: 100px;
-	height: 100px;
-	display: block;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 100%;
-	background-color: #fff;
-	margin-bottom: 45px;
-}
-.shane_tm_business_video .rounded:before{
-	position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 13px 0 13px 26px;
-    border-color: transparent transparent transparent #000;
-    top: 50%;
-    left: 50%;
-    margin-left: 4px;
-    transform: translate(-50%,-50%);
-}
-.shane_tm_business_video .text{
-	color: #fff;
-	font-family: "Poppins";
-	font-size: 30px;
-	max-width: 600px;
-	margin: 0px auto;
-	margin-bottom: 50px;
-	font-weight: 800;
-}
-.shane_tm_video_button{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.shane_tm_video_button a{
-	text-decoration: none;
-	color: #fff;
-	background-color: transparent;
-	display: inline-block;
-	padding: 13px 48px;
-	border: 2px solid #fff;
-	font-family: "Poppins";
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.shane_tm_video_button a:hover{
-	color: #000;
-	background-color: #fff;
-}
-
-/*---------------------------------------------------*/
-/*	09) SHANE PARTNERS
-/*---------------------------------------------------*/
-
-.shane_tm_partners{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.shane_tm_partners .partners_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 90px 0px;
-}
-.shane_tm_partners .partners_inner ul{
-	margin: 0px;
-	list-style-type: none;
-}
-.shane_tm_partners .partners_inner ul li{
-	margin: 0px;
-	opacity: .5;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.shane_tm_partners .partners_inner ul li{
-	max-width: 200px;
-	max-height: 200px;
-}
-.shane_tm_partners .partners_inner ul li:hover{opacity: 1;}
-
-/*---------------------------------------------------*/
-/*	10) SHANE TESTIMONIALS
+/*TESTIMONIALS
 /*---------------------------------------------------*/
 
 .shane_tm_testimonials{
@@ -1456,7 +1182,7 @@ body.loaded .overlay_effect:after{
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 150px 0px;
+	padding: 75px 0px;
 }
 .shane_tm_testimonials .testimonials_inner{
 	width: 100%;
@@ -1472,6 +1198,7 @@ body.loaded .overlay_effect:after{
 .shane_tm_testimonials .right{
 	width: 50%;
 	padding-left: 50px;
+	padding-top: 150px;
 }
 .shane_tm_testimonials .right ul{
 	margin: 0px;
@@ -1565,7 +1292,7 @@ body.loaded .overlay_effect:after{
 }
 
 /*---------------------------------------------------*/
-/*	11) SHANE NEWS
+/* NEWS
 /*---------------------------------------------------*/
 
 .shane_tm_news{
@@ -1573,7 +1300,7 @@ body.loaded .overlay_effect:after{
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 150px 0px 90px 0px;
+	padding: 110px 0px 90px 0px;
 }
 .shane_tm_news .news_list{
 	width: 100%;
@@ -1636,8 +1363,8 @@ body.loaded .overlay_effect:after{
 .shane_tm_news .news_list ul li .details .title{margin-bottom: 10px;}
 .shane_tm_news .news_list ul li .details .title a{
 	text-decoration: none;
-	color: #000;
-	font-size: 18px;
+	color: white;
+	font-size: 16px;
 	font-weight: 600;
 	display: inline-block;
 	
@@ -1749,15 +1476,8 @@ body.loaded .overlay_effect:after{
 }
 
 
-
-
-
-
-
-
-
 /*---------------------------------------------------*/
-/*	12) SHANE TALK
+/* TALK
 /*---------------------------------------------------*/
 
 .shane_tm_talk{
@@ -1839,7 +1559,7 @@ body.loaded .overlay_effect:after{
 }
 
 /*---------------------------------------------------*/
-/*	13) SHANE COPYRIGHT
+/* COPYRIGHT
 /*---------------------------------------------------*/
 
 .shane_tm_copyright{
@@ -1866,181 +1586,9 @@ body.loaded .overlay_effect:after{
 	color: #fff;
 }
 
-/*---------------------------------------------------*/
-/*	14) SHANE MODALBOX CONTACT
-/*---------------------------------------------------*/
-
-.shane_tm_contact_popup{
-	position: absolute;
-	z-index: -111;
-	opacity: 0;
-	visibility: hidden;
-	display: none;
-}
-.shane_tm_modalbox .popup_description_wrap{
-	position: relative;
-    width: 100%;
-    height: 100%;
-    float: left;
-}
-.shane_tm_modalbox .contact_title h3{font-weight: 800;}
-.shane_tm_modalbox .wrapper{
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: flex;
-	padding-top: 31px;
-	margin-bottom: 50px;
-}
-.shane_tm_modalbox .wrapper .desc{
-	max-width: 50%;
-	float: left;
-	padding-top: 95px;
-}
-.shane_tm_modalbox .wrapper .left{
-	width: 50%;
-	padding-right: 25px;
-}
-.shane_tm_modalbox .wrapper .fields{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.shane_tm_modalbox .wrapper .fields .first{
-	width: 100%;
-	float: left;
-}
-.shane_tm_modalbox .wrapper .fields ul{
-	margin: 0px;
-	list-style-type: none;
-}
-.shane_tm_modalbox .wrapper .fields ul li{
-	width: 100%;
-	margin: 0px 0px 30px 0px;
-	float: left;
-}
-.shane_tm_modalbox .wrapper .fields ul li input{
-	width: 100%;
-	border: 1px solid rgba(0,0,0,.2);
-	background-color: #fff;
-}
-.shane_tm_modalbox .wrapper .fields ul li input:focus{
-	outline: none;
-	border: 1px solid rgba(0,0,0,.5);
-}
-.shane_tm_modalbox .wrapper .fields .last textarea{
-	width: 100%;
-	border: 1px solid rgba(0,0,0,.2);
-	height: 120px;
-	resize: none;
-	margin-bottom: 20px;
-	background-color: #fff;
-}
-.shane_tm_modalbox .wrapper .fields .last textarea:focus{
-	outline: none;
-	border: 1px solid rgba(0,0,0,.5);
-} 
-.shane_tm_modalbox .wrapper .empty_notice{
-	color: #F52225;
-	margin-bottom: 7px;
-	display: none;
-	text-align: left;
-	font-weight: 500;
-}
-.shane_tm_modalbox .wrapper .contact_error{
-	color: #F52225;
-	text-align: left;
-	font-weight: 500;
-}
-.shane_tm_modalbox .wrapper .returnmessage{
-	color:#3A00FF;
-	margin-bottom: 7px;
-	text-align: left;
-	font-weight: 500;
-}
-.shane_tm_modalbox .wrapper .right{
-	width: 50%;
-	padding-left: 25px;
-	position: relative;
-	top:6px;
-}
-.shane_tm_modalbox .wrapper .map_wrap .map {
-  min-height: 359px;
-  width: 100%;
-}
-.shane_tm_modalbox .short_info{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.shane_tm_modalbox .short_info > ul{
-	margin: 0px 0px 0px -50px;
-	list-style-type: none;
-	display: flex;
-	flex-wrap: wrap;
-}
-.shane_tm_modalbox .short_info > ul > li{
-	margin: 0px 0px 50px 0px;
-	float: left;
-	width: 33.3333%;
-	padding-left: 50px;
-	text-align: center;
-}
-.shane_tm_modalbox .short_info > ul > li .list_inner{
-	width: 100%;
-	height: 100%;
-	clear: both;
-	float: left;
-	position: relative;
-	background-color: #000;
-	padding: 50px 20px;
-}
-.shane_tm_modalbox .short_info > ul > li p{
-	font-family: "Poppins";
-	font-weight: 500;
-	color: #fff;
-}
-.shane_tm_modalbox .short_info > ul > li a{
-	text-decoration: none;
-	color: #fff;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.shane_tm_modalbox .short_info > ul > li a:hover{color: #fff;}
-.shane_tm_modalbox .short_info > ul > li .list_inner > i{
-	font-size: 25px;
-	margin-bottom: 10px;
-	display: inline-block;
-	color: #fff;
-}
-.shane_tm_modalbox .social{
-	margin: 0px;
-	list-style-type: none;
-	position: relative;
-	top: -3px;
-}
-.shane_tm_modalbox .social li{
-	margin: 0px 8px 0px 0px;
-	display: inline-block;
-}
-.shane_tm_modalbox .social li:last-child{margin-right: 0px;}
-.shane_tm_modalbox .social li a{
-	text-decoration: none;
-	color: #fff;
-}
-.shane_tm_modalbox .social li i{
-	color: #fff;
-	font-size: 18px;
-}
 
 /*---------------------------------------------------*/
-/*	15) SHANE CURSOR
+/*	 CURSOR
 /*---------------------------------------------------*/
 
 .mouse-cursor{
@@ -2130,257 +1678,9 @@ body.loaded .overlay_effect:after{
 	color: #000;
 }
 
-/*---------------------------------------------------*/
-/*  SHANE SETTINGS
-/*---------------------------------------------------*/
-
-.shane_tm_settings{
-	position: fixed;
-	z-index: 200;
-	top: 20%;
-	right: -200px;
-	width: 200px;
-	background-color: rgba(0,0,0,1.00);
-	padding: 40px 20px 33px 30px;
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.shane_tm_settings.opened{
-	right: 0px;
-}
-.shane_tm_settings .wrapper{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.shane_tm_settings .icon{
-	position: absolute;
-	top: 0px;
-	right: 100%;
-	background-color: #000;
-	padding: 12px 12px 4px 12px;
-}
-.shane_tm_settings .icon .svg{
-	color: #fff;
-	width: 25px;
-	height: 25px;
-	animation: fa-spin 2s infinite linear;
-}
-.shane_tm_settings .link{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 1;
-}
-
-@-webkit-keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-@keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-.shane_tm_settings .title{
-	color: #fff;
-	font-family: "Poppins";
-	font-weight: 600;
-	position: relative;
-	display: inline-block;
-}
-.shane_tm_settings .title:before{
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255,255,255,.2);
-	left: 0px;
-	bottom: 0px;
-}
-.shane_tm_settings .colors{
-	margin: 0px 0px 22px 0px;
-	list-style-type: none;
-	padding-top: 32px;
-}
-.shane_tm_settings .colors li{
-	margin: 0px;
-	display: inline-block;
-}
-.shane_tm_settings .colors li a{
-	text-decoration: none;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-}
-.shane_tm_settings .direction{
-	list-style-type: none;
-	margin:  0px;
-}
-.shane_tm_settings .direction li{
-	margin: 0px 20px 0px 0px;
-	display: inline-block;
-}
-.shane_tm_settings .direction li a{
-	opacity: .4;
-	text-decoration: none;
-	color: #fff; 
-}
-.shane_tm_settings .direction li a.active{
-	opacity: 1;
-}
-.shane_tm_settings .direction li .svg{
-	width: 25px;
-	height: 25px;
-}
-.shane_tm_settings .colors li.bl{
-	display: inline-block;
-}
-.shane_tm_settings .colors li.wh{
-	display: none;
-}
-body.dark .shane_tm_settings .colors li.bl,
-.shane_tm_settings.changed .colors li.bl{
-	display: none;
-}
-body.dark .shane_tm_settings .colors li.wh,
-.shane_tm_settings.changed .colors li.wh{
-	display: inline-block;
-}
-body.dark .shane_tm_settings,
-.shane_tm_settings.changed{
-	background-color: #fff;
-}
-body.dark .shane_tm_settings .icon,
-.shane_tm_settings.changed .icon{
-	background-color: #fff;
-}
-body.dark .shane_tm_settings .icon .svg,
-.shane_tm_settings.changed .icon .svg{
-	color: #000;
-}
-body.dark .shane_tm_settings .title,
-.shane_tm_settings.changed .title{
-	color: #000;
-}
-body.dark .shane_tm_settings .title:before,
-.shane_tm_settings.changed .title:before{
-	background-color: rgba(0,0,0,.5);
-}
-body.dark .shane_tm_settings .direction li a,
-.shane_tm_settings.changed .direction li a{
-	color: #000;
-}
-body.dark .shane_tm_settings .cursor li:nth-child(1) a,
-.shane_tm_settings.changed .cursor li:nth-child(1) a{
-	border-color: #000;
-}
-body.dark .shane_tm_settings .cursor li:nth-child(1) a:before,
-.shane_tm_settings.changed .cursor li:nth-child(1) a:before{
-	background-color: #000;
-}
-body.dark .shane_tm_settings .cursor li .svg,
-.shane_tm_settings.changed .cursor li .svg{
-	color: #000;
-}
-.shane_tm_settings .cursor{
-	margin: 0px;
-	list-style-type: none;
-	padding-top: 15px;
-}
-.shane_tm_settings .cursor li{
-	margin: 0px 20px 0px 0px;
-	display: inline-block;
-}
-.shane_tm_settings .cursor li a{
-	text-decoration: none;
-	color: #fff;
-	opacity: .4;
-	font-weight: 600;
-}
-.shane_tm_settings .cursor li a.showme{
-	opacity: 1;
-}
-.shane_tm_settings .cursor li:nth-child(1) a{
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-	border: 2px solid #fff;
-	position: relative;
-	display: inline-block;
-}
-.shane_tm_settings .cursor li:nth-child(1) a:before{
-	position: absolute;
-	content: "";
-	width: 4px;
-	height: 4px;
-	border-radius: 100%;
-	background-color: #fff;
-	transform: translate(-50%,-50%);
-	left: 50%;
-	top: 50%;
-}
-.shane_tm_settings .cursor li .svg{
-	width: 25px;
-	height: 25px;
-	color: #fff;
-}
-.shane_tm_settings .cursor li:nth-child(2){
-	position: relative;
-	top: -2px;
-}
-.shane_tm_settings .effect{
-	margin: 0px;
-	list-style-type: none;
-	padding-top: 15px;
-	padding-bottom: 25px;
-}
-.shane_tm_settings .effect li{
-	margin: 0px 0px 5px 0px;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 100%;
-	background-color: #fff;
-	opacity: .4;
-}
-.shane_tm_settings .effect li a{
-	text-decoration: none;
-	color: #000;
-	font-size: 13px;
-	font-weight: 600;
-	font-family: "Poppins";
-	display: block;
-	position: relative;
-	top: 2px;
-}
-.shane_tm_settings .effect li.selected{
-	background-color: #fff;
-	opacity: 1;
-}
 
 /*---------------------------------------------------*/
-/*	SHANE INTRO
+/* INTRO
 /*---------------------------------------------------*/
 
 .shane_tm_intro{
@@ -2448,7 +1748,7 @@ body.dark .shane_tm_settings .cursor li .svg,
 }
 
 /*---------------------------------------------------*/
-/*	16) SHANE MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
